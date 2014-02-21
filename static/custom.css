@@ -1,8 +1,24 @@
 .name {
 	width: 100%;
-	background-image: url(van.jpg);
+	background-image: url(rocks.jpg);
+	-webkit-filter: blur(2px); -moz-filter: blur(2px); -o-filter: blur(2px); -ms-filter: blur(2px); filter: blur(2px);
+	background-size: cover;
+	height: 100%;
+	-khtml-opacity:.80; 
+	-moz-opacity:.80; 
+	-ms-filter:"alpha(opacity=80)";
+	filter:alpha(opacity=80);
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.80);
+	opacity:.80; 
 }
 
-.name h2 {
-
+h1.reef {
+	/*padding-bottom: 200px;*/
+	font-weight: bolder;
+	position: absolute;
+	top: 40%;
+	width: 100%;
+	text-align: center;
+	color: #ecf0f1;
+	font-size: 100px;
 }
