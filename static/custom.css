@@ -3,6 +3,8 @@
 	background-image: url(van.jpg);
 	-webkit-filter: blur(2px); -moz-filter: blur(2px); -o-filter: blur(2px); -ms-filter: blur(2px); filter: blur(2px);
 	background-size: cover;
+	position: relative;
+	font-size: .1em;
 	height: 100%;
 	-khtml-opacity:.80; 
 	-moz-opacity:.80; 

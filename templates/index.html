@@ -26,6 +26,7 @@
 				<button class="btn btn-lg btn-info" onclick="track2()">Enter The Reef</button><br>
 				<button class="btn btn-lg btn-info" onclick="track3()">Strict Steve</button><br>
 				<button class="btn btn-lg btn-info" onclick="track4()">In Your Eyes</button><br>
+				<button class="btn btn-lg btn-info" onclick="track5()">Save Myself</button><br>
 			</div>
 			<div class="col-lg-6 current">
 				<i class="fa fa-music"></i>
@@ -74,6 +75,8 @@
 	</div>
 </div>
 <script type="text/javascript">
+	window.onscroll = function emParallax() {
+	document.getElementById("parallax").style.fontSize = (window.pageYOffset/20)*.1+"em"; }
 	function track1(){
 		$('.current').remove();
 		$('#listen').append('<div class="col-lg-6 current"><iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/126370907&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe></div>')
@@ -89,6 +92,10 @@
 	function track4(){
 		$('.current').remove();
 		$('#listen').append('<div class="col-lg-6 current"><iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/109633032&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe></div>')
+	}
+	function track5(){
+		$('.current').remove();
+		$('#listen').append('<div class="col-lg-6 current"><iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/58487048&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe></div>')
 	}
 </script>
 {% endblock %}
