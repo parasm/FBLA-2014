@@ -53,3 +53,17 @@ h1.reef {
 	height: 60%;
 	width: 190%;
 }
+.track-pick{
+	width: 40%;
+}
+.current i{
+	padding-left: 30%;
+	font-size: 250px;
+}
+.track-pick h2{
+	font-size: 43px;
+}
+.track-pick li{
+	font-size: 26px;
+	text-decoration: underline;
+}
