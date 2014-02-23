@@ -33,6 +33,15 @@ h1.reef {
 	color: #e67e22;
 	font-size: 80px;
 }
+#about{
+	background-color: #1abc9c;
+}
+#tour{
+	background-color:#e74c3c;
+}
+#cart{
+	background-color: #9b59b6;
+}
 .nav-top{
 	text-align: center;
 	width: 20%;
