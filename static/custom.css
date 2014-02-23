@@ -1,6 +1,6 @@
 .name {
 	width: 100%;
-	background-image: url(rocks.jpg);
+	background-image: url(van.jpg);
 	-webkit-filter: blur(2px); -moz-filter: blur(2px); -o-filter: blur(2px); -ms-filter: blur(2px); filter: blur(2px);
 	background-size: cover;
 	height: 100%;
@@ -14,11 +14,42 @@
 
 h1.reef {
 	/*padding-bottom: 200px;*/
+	color: orange;
 	font-weight: bolder;
 	position: absolute;
 	top: 40%;
 	width: 100%;
 	text-align: center;
-	color: #ecf0f1;
+	color: #e67e22;
 	font-size: 100px;
+}
+.fa-angle-down:before {
+	color: orange;
+	font-weight: bolder;
+	position: absolute;
+	top: 80%;
+	width: 100%;
+	text-align: center;
+	color: #e67e22;
+	font-size: 80px;
+}
+.nav-top{
+	text-align: center;
+	width: 25%;
+}
+.about-pic{
+	width: 75%;
+}
+.header{
+	font-size: 60px;
+}
+.section{
+	height: 100%;
+}
+.descrp{
+	font-size: 20px;
+}
+.tour-pic{
+	height: 60%;
+	width: 190%;
 }

@@ -2,7 +2,57 @@
 {% block title %}Home{% endblock %}
 {% block content %}
 <div class="name">&nbsp;</div>
-<h1 class="reef">Choral Reef</h1>
-<br/>
-<h2>Hi</h2>
+<div class="reef">
+	<h1 class="reef">Choral Reef</h1>
+	<a href="#about"><i class="fa fa-angle-down"></i></a>
+</div>
+<br/><br>
+<div class="container">
+	<div class="row section" id="about">
+		<h1 class="header">About Us</h1>
+		<div class="col-lg-6 descrp">
+			At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. 
+		</div>
+		<div class="col-lg-6">
+			<img src="https://i4.sndcdn.com/artworks-000065227484-7pbl31-t200x200.jpg?435a760" class="about-pic">
+		</div>
+	</div>
+	<div class="row section" id="listen">
+		<h1 class="header">Listen</h1>
+		<div class="col-lg-4">
+			<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/122254903&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>
+		</div>
+		<div class="col-lg-4">
+			<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/124600491&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>
+		</div>
+		<div class="col-lg-4">
+			<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/126370907&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>
+		</div>
+	</div>
+	<div class="row section" id="tour">
+		<h1 class="header">Tour Schedule</h1>
+		<div class="col-lg-4">
+			<h2>Next Concert:</h2>
+			<img src="http://upload.wikimedia.org/wikipedia/commons/e/e7/BergenCA.jpg" class="tour-pic">
+			<p>
+				At Bergen County Academies on 4/13/2014
+			</p>
+		</div>
+	</div>
+	<div class="row section" id="buy">
+		<h1 class="header">Buy Tickets</h1>
+		<div class="col-lg-4">
+			<form method="POST" action="/">
+				<label>Full Name: 
+					<input name="name" placeholder="Paras Modi">
+				</label>
+				<label>Number of tickets:
+					<input name="num" placeholder="1">
+				</label>
+				<button type="Submit" class="btn btn-lg btn-success">Buy!</button>
+			</form>
+			<!-- or evenbrite this... -->
+		</div>
+	</div>
+</div>
 {% endblock %}
