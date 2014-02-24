@@ -46,7 +46,6 @@ h1.reef {
 	background-image: url(ocean.jpg);
 	background-size: cover;
 	position: relative;
-	height: 100%;
 	background-repeat: initial;
 }
 .listen{
@@ -55,6 +54,12 @@ h1.reef {
 	position: relative;
 	height: 100%;
 	background-repeat: initial;
+}
+label{
+	font-size: 20px;
+}
+.add{
+	display: inline;
 }
 .nav-top{
 	text-align: center;
