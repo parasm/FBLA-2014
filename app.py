@@ -16,7 +16,7 @@ def thanks():
 
 @app.route('/blog')
 def blog():
-	return render_template("blog.html")
+	return render_template("blog.html", blog=True)
 
 if __name__ == '__main__':
 	port = int(os.environ.get('PORT', 8000))
