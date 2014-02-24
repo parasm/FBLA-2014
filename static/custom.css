@@ -1,6 +1,9 @@
 *{
 	color:white;
 }
+.blog{
+	color:#34495e;
+}
 .name{
 	width: 100%;
 	background-image: url(./van_mini.jpg);
@@ -39,7 +42,7 @@ h1.reef {
 	font-size: 80px;
 }
 #about{
-	background-image: url(./mountain.jpg);
+	background-image: url(./rocks.jpg);
 	background-size: cover;
 	position: relative;
 	height: 100%;
