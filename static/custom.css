@@ -119,3 +119,24 @@ label{
 .cancel{
 	display:inline-block;
 }
+
+.blog-panel {
+	background-image: url(./train.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.blog-panel h1 {
+	color: #ecf0f1;
+}
+
+.well.blog {
+	opacity: .9;
+}
+
+h2 small {
+	color: #34495e;
+}
