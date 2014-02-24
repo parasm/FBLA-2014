@@ -40,6 +40,7 @@ h1.reef {
 	background-size: cover;
 	position: relative;
 	height: 100%;
+	background-repeat: initial;
 }
 #tour{
 	background-image: url(ocean.jpg);
@@ -47,7 +48,7 @@ h1.reef {
 	position: relative;
 	height: 100%;
 }
-#cart{
+.listen{
 	background-image: url(water.jpg);
 	background-size: cover;
 	position: relative;
