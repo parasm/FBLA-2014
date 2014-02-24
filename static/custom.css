@@ -3,7 +3,7 @@
 }
 .name{
 	width: 100%;
-	background-image: url(van_mini.jpg);
+	background-image: url(./van_mini.jpg);
 	-webkit-filter: blur(2px); -moz-filter: blur(2px); -o-filter: blur(2px); -ms-filter: blur(2px); filter: blur(2px);
 	background-size: cover;
 	position: relative;
@@ -39,27 +39,27 @@ h1.reef {
 	font-size: 80px;
 }
 #about{
-	background-image: url(mountain.jpg);
+	background-image: url(./mountain.jpg);
 	background-size: cover;
 	position: relative;
 	height: 100%;
 	background-repeat: initial;
 }
 #tour{
-	background-image: url(water.jpg);
+	background-image: url(./water.jpg);
 	background-size: cover;
 	position: relative;
 	background-repeat: initial;
 }
 .listen{
-	background-image: url(ocean_mini.jpg);
+	background-image: url(./ocean_mini.jpg);
 	background-size: cover;
 	position: relative;
 	height: 100%;
 	background-repeat: initial;
 }
 #cart{
-	background-image: url(beach_mini.jpg);
+	background-image: url(./beach_mini.jpg);
 	background-size: cover;
 	position: relative;
 	height: 100%;
