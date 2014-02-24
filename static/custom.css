@@ -1,3 +1,7 @@
+.navbar {
+	opacity: .75;
+}
+
 *{
 	color:white;
 }
@@ -22,10 +26,6 @@
 
 h1.reef {
 	/*padding-bottom: 200px;*/
-<<<<<<< HEAD
-=======
-	color: white;
->>>>>>> 97ec59a9eee0c04262877bd573959ad12910ad74
 	font-weight: bolder;
 	position: absolute;
 	top: 40%;
@@ -40,12 +40,7 @@ h1.reef {
 	position: absolute;
 	top: 80%;
 	width: 100%;
-<<<<<<< HEAD
-	text-align: center;
-	color: #2c3e50;
-=======
 	text-align: center;	
->>>>>>> 97ec59a9eee0c04262877bd573959ad12910ad74
 	font-size: 80px;
 }
 #about{
