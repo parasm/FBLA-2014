@@ -2,9 +2,9 @@
 {% block title %}Choral Reef{% endblock %}
 {% block content %}
 <div class="name"></div>
-<div class="reef">
-	<h1 class="reef">Choral Reef</h1>
-	<a href="#about"><i class="fa fa-angle-down"></i></a>
+<div class="reef" style="color:white;">
+	<h1 class="reef" style="color:white;">Choral Reef</h1>
+	<a href="#about"><i class="fa fa-angle-down" style="color:white;"></i></a>
 </div>
 <div class="row section back" id="about">
 	<div class="container">
@@ -141,7 +141,7 @@
 </div>
 <script type="text/javascript">
 	$('document').ready(function(){
-		var $window = $(window); var velocity = 0.9; function update(){ var pos = $window.scrollTop(); $('.back').each(function() { var $element = $(this); var height = $element.height(); $(this).css('backgroundPosition', '50% ' + Math.round((height - pos) * velocity) + 'px'); }); }; $window.bind('scroll', update);
+		// var $window = $(window); var velocity = 0.9; function update(){ var pos = $window.scrollTop(); $('.back').each(function() { var $element = $(this); var height = $element.height(); $(this).css('backgroundPosition', '50% ' + Math.round((height - pos) * velocity) + 'px'); }); }; $window.bind('scroll', update);
 
 	});
 	$('#form').submit(function (event) {
