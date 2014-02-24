@@ -1,10 +1,29 @@
+@font-face {
+	font-family: "ProximaNova";
+	src: url('/static/ProximaNova-Light.otf') format("opentype");
+}
+
+@font-face {
+	font-family: "ProximaNova";
+	src: url('/static/ProximaNova-Bold.otf') format("opentype");
+	font-weight: bold;
+}
+
+
+@font-face {
+	font-family: "ProximaNova";
+	src: url('/static/ProximaNova-Extrabold.otf') format("opentype");
+	font-weight: bolder;
+}
+
+html, body {
+	font-family: ProximaNova, Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
 .navbar {
 	opacity: .75;
 }
 
-*{
-	color:white;
-}
 .blog{
 	color:#34495e;
 }
@@ -44,8 +63,9 @@ h1.reef {
 	font-size: 80px;
 }
 #about{
-	background-image: url(./ny.jpg);
-	background-size: cover;
+	/*background-image: url(./boardwalk.jpg);*/
+	background-image: url(./dimension.png);
+	background-size: repeat;
 	/*position: relative;*/
 	height: 100%;
 	/*background-repeat: initial;*/
@@ -152,4 +172,13 @@ h2 small {
 }
 #about .header {
 	color: #2c3e50;
+}
+
+.center {
+	text-align: center;
+}
+
+.jumbotron {
+	color: #2c3e50 !important;
+	opacity: .8;
 }
