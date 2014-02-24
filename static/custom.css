@@ -47,12 +47,14 @@ h1.reef {
 	background-size: cover;
 	position: relative;
 	height: 100%;
+	background-repeat: initial;
 }
 .listen{
 	background-image: url(water.jpg);
 	background-size: cover;
 	position: relative;
 	height: 100%;
+	background-repeat: initial;
 }
 .nav-top{
 	text-align: center;
