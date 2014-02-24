@@ -1,59 +1,37 @@
-<html>
-	<head>
-		<title>Blog - Choral Reef</title>
-		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="/static/flatly.css">
-		<link rel="stylesheet" type="text/css" href="/static/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="/static/custom.css">
-	</head>
-	<body>
-		<div class="row">
-			<div class="col-lg-3 blog-side">
-				<button class="btn btn-info blog" onclick="track1()">Blog Post on 1/23/14</button><br>
-				<button class="btn btn-info blog" onclick="track2()">Blog Post on 2/25/04</button><br>
-				<button class="btn btn-info blog" onclick="track3()">Blog Post on 3/5/13</button><br>
-				<button class="btn btn-info blog" onclick="track4()">Blog Post on 4/9/02</button><br>
-				<button class="btn btn-info blog" onclick="track4()">Blog Post on 8/25/05</button><br>
-				<button class="btn btn-info blog" onclick="track4()">Blog Post on 9/15/08</button><br>
-			</div>
-			<div class="col-lg-9">
-				<h1>Title of post</h1>
-				<p>
-					Add your writing here
-				</p>
-			</div>
-		</div>
-		<div class="container">
-		<div class="row">
-			<h1>12/15</h1>
-			<p>
-				Our first single Strict Steve is being released today. We are very proud of this release. It represents a great start to our career.
-			</p>
-		</div>
-		</div>
-		<div class="container">
-		<div class="row">
-			<h1>1/1</h1>
-			<p>
-				Our second single Enter The Reef has been released. It is hard to understand how proud we are of this track. It is the main track to set the mood of the EP. The full Enter The Reef EP will be coming soon.
-			</p>
-		</div>
-		</div>
-		<div class="container">
-		<div class="row">
-			<h1>1/23</h1>
-			<p>
-				It has been a while since our last release, but we have some great music coming soon.
-			</p>
-		</div>
-		</div>
-		<div class="container">
-		<div class="row">
-			<h1>2/14</h1>
-			<p>
-				The Enter The Reef EP is still coming soon. However, we are happy to announce that a Strict Steve Stricter Remixes EP will also be out soon.
-			</p>
-		</div>
-		</div>
-	</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Blog{% endblock %}
+{% block content %}
+<h1 style="text-align:center; font-size:50px;">The Choral Reef Blog</h1>
+<div class="container">
+	<div class="row">
+		<h1>12/15/2014</h1>
+		<p>
+			Our first single Strict Steve is being released today. We are very proud of this release. It represents a great start to our career.
+		</p>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<h1>1/1/2014</h1>
+		<p>
+			Our second single Enter The Reef has been released. It is hard to understand how proud we are of this track. It is the main track to set the mood of the EP. The full Enter The Reef EP will be coming soon.
+		</p>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<h1>1/23/2014</h1>
+		<p>
+			It has been a while since our last release, but we have some great music coming soon.
+		</p>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<h1>2/14/2014</h1>
+		<p>
+			The Enter The Reef EP is still coming soon. However, we are happy to announce that a Strict Steve Stricter Remixes EP will also be out soon.
+		</p>
+	</div>
+</div>
+{% endblock %}

@@ -4,15 +4,16 @@ import os
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['GET','POST'])
 def hello():
+	if request.method == "POST":
+		return redirect('/thanks')
 	return render_template("index.html")
-@app.route('/buy')
-def buy():
-	return render_template("buy.html")
-@app.route('/about')
-def about():
-	return render_template("about.html")
+
+@app.route('/thanks')
+def thanks():
+	return render_template("thanks.html")
+
 @app.route('/blog')
 def blog():
 	return render_template("blog.html")
