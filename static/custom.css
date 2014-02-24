@@ -42,10 +42,16 @@ h1.reef {
 	height: 100%;
 }
 #tour{
-	background-color:#e74c3c;
+	background-image: url(ocean.jpg);
+	background-size: cover;
+	position: relative;
+	height: 100%;
 }
 #cart{
-	background-color: #9b59b6;
+	background-image: url(water.jpg);
+	background-size: cover;
+	position: relative;
+	height: 100%;
 }
 .nav-top{
 	text-align: center;
