@@ -125,7 +125,9 @@
             var tour1 = $('#tour1').val();
             var tour2 = $('#tour2').val();
             var tour3 = $('#tour3').val();
-            console.log(tour2);
+            if($('.tour1').children().length > 0 || $('.tour2').children().length > 0 || $('.tour3').children().length > 0){
+            	$( "h2" ).remove( ":contains('bought')" );
+            }
             if(tour1 != ""){
             	if(tour1 == "1"){
             		$('.tour1').append('<h2>You bought ' + tour1 + 'ticket for the March 21<sup>st</sup> ,2014 concert</h2>');
