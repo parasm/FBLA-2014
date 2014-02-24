@@ -100,3 +100,9 @@ label{
 	margin-top: 2%;
 	width: 70%;
 }
+.sizer{
+	font-size: 34px;
+}
+.cancel{
+	display:inline-block;
+}

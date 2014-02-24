@@ -151,39 +151,77 @@
             var price3 = 60.00;
             var total = 0.00;
             if($('.tour1').children().length > 0 || $('.tour2').children().length > 0 || $('.tour3').children().length > 0 || $('.total').children().length > 0){
-            	$( "h3" ).remove( ":contains('added')" );
+            	// $( "h3" ).remove( ":contains('added')" );
             	$('.totalp').remove();
-            	$( ".rem" ).remove();
+            	// $( ".rem" ).remove();
+            	$('.remove1').remove();
+            	$('.remove2').remove();
+				$('.remove3').remove();
             }
             if(tour1 != ""){
             	if(tour1 == "1"){
-            		$('.tour1').append('<h3>You added ' + tour1 + ' ticket for the March 21<sup>st</sup> ,2014 concert</h3><h4 class="rem">Price: $'+price1+'</h4>');
+            		$('.tour1').append('<span class="remove1"><h3 style="display:inline-block; width:55%;">You added ' + tour1 + ' ticket for the March 21<sup>st</sup> ,2014 concert </h3><span class="clear1"><i class="fa fa-times sizer"></i></span><h4 class="rem">Price: $'+price1+'</h4></span>');
+            		$( ".clear1" ).bind( "click", function() {
+					  	$('.totalp').remove();
+					  	$('.remove1').remove();
+					  	total = (total-price1);
+					  	$('.total').append('<h3 class="totalp">Total price: $' + total);
+					});
             		total+=price1;
             	}else{
             		var tour_price1 = parseInt(tour1,10)*price1;
-            		$('.tour1').append('<h3>You added ' + tour1 + ' tickets for the March 21<sup>st</sup> ,2014 concert</h3><h4 class="rem">Price: $'+tour_price1+'</h4>');
+            		$('.tour1').append('<span class="remove1"><h3 style="display:inline-block; width:55%;">You added ' + tour1 + ' tickets for the March 21<sup>st</sup> ,2014 concert </h3><span class="clear1"><i class="fa fa-times sizer"></i></span><h4 class="rem">Price: $'+tour_price1+'</h4></span>');
+            		$( ".clear1" ).bind( "click", function() {
+					  	$('.totalp').remove();
+					  	$('.remove1').remove();
+					  	total = (total-tour_price1);
+					  	$('.total').append('<h3 class="totalp">Total price: $' + total);
+					});
             		total+= tour_price1;
             	}
-            	
             }
             if(tour2 != ""){
             	if(tour2 == "1"){
-            		$('.tour2').append('<h3>You added ' + tour2 + ' ticket for the May 18<sup>th</sup> ,2014 concert</h3><h4 class="rem">Price: $'+price2+'</h4>');
+            		$('.tour2').append('<span class="remove2"><h3 style="display:inline-block; width:55%;">You added ' + tour2 + ' ticket for the May 18<sup>th</sup> ,2014 concert </h3><span class="clear2"><i class="fa fa-times sizer"></i></span><h4 class="rem">Price: $'+price2+'</h4></span>');
+            		$( ".clear2" ).bind( "click", function() {
+					  	$('.totalp').remove();
+					  	$('.remove2').remove();
+					  	total = (total-price2);
+					  	$('.total').append('<h3 class="totalp">Total price: $' + total);
+					});
             		total+=price2;
             	}else{
             		var tour_price2 = parseInt(tour2,10)*price2;
-            		$('.tour2').append('<h3>You added ' + tour2 + ' tickets for the May 18<sup>th</sup> ,2014 concert</h3><h4 class="rem">Price: $'+tour_price2+'</h4>');
+            		$('.tour2').append('<span class="remove2"><h3 style="display:inline-block; width:55%;">You added ' + tour2 + ' tickets for the May 18<sup>th</sup> ,2014 concert </h3><span class="clear2"><i class="fa fa-times sizer"></i></span><h4 class="rem">Price: $'+tour_price2+'</h4></span>');
+            		$( ".clear2" ).bind( "click", function() {
+					  	$('.totalp').remove();
+					  	$('.remove2').remove();
+					  	total = (total-tour_price2);
+					  	$('.total').append('<h3 class="totalp">Total price: $' + total);
+					});
             		total+= tour_price2;
             	}
             	
             }
             if(tour3 != ""){
             	if(tour3 == "1"){
-            		$('.tour3').append('<h3>You added ' + tour3 + ' ticket for the July 3<sup>th</sup> ,2014 concert</h3><h4 class="rem">Price: $'+price3+'</h4>');
+            		$('.tour3').append('<span class="remove3"><h3 style="display:inline-block; width:55%;">You added ' + tour3 + ' ticket for the July 3<sup>th</sup> ,2014 concert</h3><span class="clear3"><i class="fa fa-times sizer"></i></span><h4 class="rem">Price: $'+price3+'</h4></span>');
+            		$( ".clear3" ).bind( "click", function() {
+					  	$('.totalp').remove();
+					  	$('.remove3').remove();
+					  	total = (total-price3);
+					  	$('.total').append('<h3 class="totalp">Total price: $' + total);
+					});            		
             		total+=price3;
             	}else{
             		var tour_price3 = parseInt(tour3,10)*price3;
-            		$('.tour3').append('<h3>You added ' + tour3 + ' tickets for the July 3<sup>th</sup> ,2014 concert</h3><h4 class="rem">Price: $'+tour_price3+'</h4>');
+            		$('.tour3').append('<span class="remove3"><h3 style="display:inline-block; width:55%;">You added ' + tour3 + ' tickets for the July 3<sup>th</sup> ,2014 concert </h3><span class="clear3"><i class="fa fa-times sizer"></i></span><h4 class="rem">Price: $'+tour_price3+'</h4></span>');
+                	$( ".clear3" ).bind( "click", function() {
+					  	$('.totalp').remove();
+					  	$('.remove3').remove();
+					  	total = (total-tour_price3);
+					  	$('.total').append('<h3 class="totalp">Total price: $' + total);
+					}); 
             		total+= tour_price3;
             	}
             	
