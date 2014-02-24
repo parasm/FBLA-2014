@@ -1,4 +1,4 @@
-.name {
+.name{
 	width: 100%;
 	background-image: url(van.jpg);
 	-webkit-filter: blur(2px); -moz-filter: blur(2px); -o-filter: blur(2px); -ms-filter: blur(2px); filter: blur(2px);
@@ -36,7 +36,10 @@ h1.reef {
 	font-size: 80px;
 }
 #about{
-	background-color: #1abc9c;
+	background-image: url(rocks.jpg);
+	background-size: cover;
+	position: relative;
+	height: 100%;
 }
 #tour{
 	background-color:#e74c3c;

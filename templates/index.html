@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% block title %}Home{% endblock %}
 {% block content %}
-<div class="name">&nbsp;</div>
+<div class="name back"></div>
 <div class="reef">
 	<h1 class="reef">Choral Reef</h1>
 	<a href="#about"><i class="fa fa-angle-down"></i></a>
 </div>
-<div class="row section" id="about">
+<div class="row section back" id="about">
 	<div class="container">
 		<h1 class="header">About Us</h1>
 		<div class="col-lg-6 descrp">
@@ -75,8 +75,9 @@
 	</div>
 </div>
 <script type="text/javascript">
-	window.onscroll = function emParallax() {
-	document.getElementById("parallax").style.fontSize = (window.pageYOffset/20)*.1+"em"; }
+	$('document').ready(function(){
+		var $window = $(window); var velocity = 0.4; function update(){ var pos = $window.scrollTop(); $('.back').each(function() { var $element = $(this); var height = $element.height(); $(this).css('backgroundPosition', '50% ' + Math.round((height - pos) * velocity) + 'px'); }); }; $window.bind('scroll', update);	
+	});
 	function track1(){
 		$('.current').remove();
 		$('#listen').append('<div class="col-lg-6 current"><iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/126370907&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe></div>')
