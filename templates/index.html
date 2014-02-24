@@ -40,17 +40,21 @@
 		<h1 class="header">Tour Schedule</h1>
 		<form id="form">
 		<div class="row">
-			<div class="col-lg-4">
+			<div class="col-lg-3">
 				<h2>Concert Date: </h2>
 				<h3>March 21<sup>st</sup> ,2014</h3>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-3">
 				<h2>Venue: </h2>
 				<h3>Madison Square Garden</h3>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-3">
 				<h2>Special Guests: </h2>
 				<h3>Drake, Swedish House Mafia</h3>
+			</div>
+			<div class="col-lg-3">
+				<h2>Price: </h2>
+				<h3>$75.00</h3>
 			</div>
 			<div class="col-lg-4 add">
 				<label>Enter number of tickets
@@ -59,17 +63,21 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-4">
+			<div class="col-lg-3">
 				<h2>Concert Date: </h2>
 				<h3>May 18<sup>th</sup> ,2014</h3>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-3">
 				<h2>Venue: </h2>
 				<h3>IZOD center</h3>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-3">
 				<h2>Special Guests: </h2>
 				<h3>A$AP Rocky, Valx DJ</h3>
+			</div>
+			<div class="col-lg-3">
+				<h2>Price: </h2>
+				<h3>$50.00</h3>
 			</div>
 			<div class="col-lg-4 add">
 				<label>Enter number of tickets
@@ -78,18 +86,24 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-4">
+			<div class="col-lg-3">
 				<h2>Concert Date: </h2>
 				<h3>July 3<sup>th</sup> ,2014</h3>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-3">
 				<h2>Venue: </h2>
 				<h3>Bergen County Acadmies</h3>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-3">
 				<h2>Special Guests: </h2>
 				<h3>DJ @@, 2Chainz</h3>
 			</div>
+			<div class="col-lg-3">
+				<h2>Price: </h2>
+				<h3>$60.00</h3>
+			</div>
+		</div>	
+		<div class="row">
 			<div class="col-lg-4 add">
 				<label>Enter number of tickets
 					<input id="tour3" placeholder="3">
@@ -101,19 +115,26 @@
 	</div>
 </div>
 <div class="row section back" id="cart">
-	<div class="container">
-		<h1 class="header">Cart</h1>
-		<div class="col-lg-12 tour1">
-			
+	<form method="POST" action="/">
+		<div class="container">
+			<h1 class="header">Cart</h1>
+			<div class="col-lg-12 tour1">
+				
+			</div>
+			<div class="col-lg-12 tour2">
+				
+			</div>
+			<div class="col-lg-12 tour3">
+				
+			</div>
+			<div class="col-lg-12 total">
+				
+			</div>
+			<div class="col-lg-12">
+				<button class="btn btn-lg btn-success"> Checkout </button>				
+			</div>
 		</div>
-		<div class="col-lg-12 tour2">
-			
-		</div>
-		<div class="col-lg-12 tour3">
-			
-		</div>
-		<button class="btn btn-success"> Checkout </button>
-	</div>
+	</form>
 </div>
 <script type="text/javascript">
 	$('document').ready(function(){
@@ -123,34 +144,52 @@
 	$('#form').submit(function (event) {
             event.preventDefault();
             var tour1 = $('#tour1').val();
+            var price1 = 75.00;
             var tour2 = $('#tour2').val();
+            var price2 = 50.00;
             var tour3 = $('#tour3').val();
-            if($('.tour1').children().length > 0 || $('.tour2').children().length > 0 || $('.tour3').children().length > 0){
-            	$( "h2" ).remove( ":contains('bought')" );
+            var price3 = 60.00;
+            var total = 0.00;
+            if($('.tour1').children().length > 0 || $('.tour2').children().length > 0 || $('.tour3').children().length > 0 || $('.total').children().length > 0){
+            	$( "h3" ).remove( ":contains('added')" );
+            	$('.totalp').remove();
+            	$( ".rem" ).remove();
             }
             if(tour1 != ""){
             	if(tour1 == "1"){
-            		$('.tour1').append('<h2>You bought ' + tour1 + 'ticket for the March 21<sup>st</sup> ,2014 concert</h2>');
+            		$('.tour1').append('<h3>You added ' + tour1 + ' ticket for the March 21<sup>st</sup> ,2014 concert</h3><h4 class="rem">Price: $'+price1+'</h4>');
+            		total+=price1;
             	}else{
-            		$('.tour1').append('<h2>You bought ' + tour1 + 'tickets for the March 21<sup>st</sup> ,2014 concert</h2>');
+            		var tour_price1 = parseInt(tour1,10)*price1;
+            		$('.tour1').append('<h3>You added ' + tour1 + ' tickets for the March 21<sup>st</sup> ,2014 concert</h3><h4 class="rem">Price: $'+tour_price1+'</h4>');
+            		total+= tour_price1;
             	}
             	
             }
             if(tour2 != ""){
             	if(tour2 == "1"){
-            		$('.tour2').append('<h2>You bought ' + tour2 + 'ticket for the May 18<sup>th</sup> ,2014 concert</h2>');
+            		$('.tour2').append('<h3>You added ' + tour2 + ' ticket for the May 18<sup>th</sup> ,2014 concert</h3><h4 class="rem">Price: $'+price2+'</h4>');
+            		total+=price2;
             	}else{
-            		$('.tour2').append('<h2>You bought ' + tour2 + 'tickets for the May 18<sup>th</sup> ,2014 concert</h2>');
+            		var tour_price2 = parseInt(tour3,10)*price2;
+            		$('.tour2').append('<h3>You added ' + tour2 + ' tickets for the May 18<sup>th</sup> ,2014 concert</h3><h4 class="rem">Price: $'+tour_price2+'</h4>');
+            		total+= tour_price2;
             	}
             	
             }
             if(tour3 != ""){
             	if(tour3 == "1"){
-            		$('.tour3').append('<h2>You bought ' + tour3 + 'ticket for the July 3<sup>th</sup> ,2014 concert</h2>');
+            		$('.tour3').append('<h3>You added ' + tour3 + ' ticket for the July 3<sup>th</sup> ,2014 concert</h3><h4 class="rem">Price: $'+price3+'</h4>');
+            		total+=price3;
             	}else{
-            		$('.tour3').append('<h2>You bought ' + tour3 + 'tickets for the July 3<sup>th</sup> ,2014 concert</h2>');
+            		var tour_price3 = parseInt(tour3,10)*price3;
+            		$('.tour3').append('<h3>You added ' + tour3 + ' tickets for the July 3<sup>th</sup> ,2014 concert</h3><h4 class="rem">Price: $'+tour_price3+'</h4>');
+            		total+= tour_price3;
             	}
             	
+            }
+            if(total != 0.00){
+            	$('.total').append('<h3 class="totalp">Total price: $' + total);
             }
 
     });
