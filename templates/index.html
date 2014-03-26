@@ -1,20 +1,25 @@
 {% extends "base.html" %}
 {% block title %}Choral Reef{% endblock %}
 {% block content %}
-<div class="name"></div>
-<div class="reef" style="color:white;">
-	<h1 class="reef" style="color:white;">Choral Reef</h1>
-	<a href="#about"><i class="fa fa-angle-down" style="color:white;"></i></a>
-</div>
-<div class="section back" id="about">
-	<div class="container">
+<div class="name">
+	<br><br><br>
+	<div class="reef topmost">
+		<div class="container">
+			<div class="jumbotron reef">
+				<h1 class="reef">Choral Reef</h1>
+			</div>
+		</div>
+	</div>
+	<p style="text-align:center;" id="arrow"><a href="#about-place"><i class="fa fa-angle-down" style="color:white;"></i></a></p>
+	<br><br><br>
+	<div class="container" id="about-place">
 		<div class="jumbotron">
 			<h1 class="header center">About Us</h1>
 			<br/>
 			<div class="row">
 				<div class="col-lg-6 descrp">
 					<div class="well">
-						Choral Reef is a revolutionary new group that has recently entered the realm of producing. With inspiration from world-class DJs such as Swedish House Mafia and DJ @@, Choral Reef has goals to be on top of the charts everywhere. Choral Reef aims for quality entertainment towards all music lovers ranging from Kanye West fans to the creators of the Teen Titans original theme song. Choral Reef is currently on their Spring "The Reef is Getting Warmer" Tour in celebration of the release of the Enter The Reef EP. Tour guests include Skrillex, Stardust, and some tour dates even include the great Valx DJ. Welcome to the reef.
+						Choral Reef is a revolutionary new group that has recently entered the realm of producing. With inspiration from world-class DJs such as Swedish House Mafia and Skrillex, Choral Reef has goals to be on top of the charts everywhere. Choral Reef aims for quality entertainment towards all music lovers ranging from Kanye West fans to the creators of the Teen Titans original theme song. Choral Reef is currently on their Spring "The Reef is Getting Warmer" Tour in celebration of the release of the Enter The Reef EP. Tour guests include Skrillex, Stardust, and some tour dates even include the great Valx DJ. Welcome to the reef.
 					</div>
 				</div>
 				<div class="col-lg-6">
@@ -24,22 +29,67 @@
 		</div>
 	</div>
 </div>
-<div class="listen section back">
+<div class="reef" style="color:white;">
+</div>
+<!-- <div class="section back" id="about">
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class="header center">About Us</h1>
+			<br/>
+			<div class="row">
+				<div class="col-lg-6 descrp">
+					<div class="well">
+						Choral Reef is a revolutionary new group that has recently entered the realm of producing. With inspiration from world-class DJs such as Swedish House Mafia and Skrillex, Choral Reef has goals to be on top of the charts everywhere. Choral Reef aims for quality entertainment towards all music lovers ranging from Kanye West fans to the creators of the Teen Titans original theme song. Choral Reef is currently on their Spring "The Reef is Getting Warmer" Tour in celebration of the release of the Enter The Reef EP. Tour guests include Skrillex, Stardust, and some tour dates even include the great Valx DJ. Welcome to the reef.
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<img src="https://i4.sndcdn.com/artworks-000065227484-7pbl31-t200x200.jpg?435a760" class="about-pic">
+				</div>
+			</div>
+		</div>
+	</div>
+</div> -->
+<div class="listen section back" id="listen">
 	<div class="container">
 		<div class="jumbotron">
 			<h1 class="header">Listen</h1>
-			<div class="row" id="listen">
-				<div class="col-lg-6 track-pick">
-					<h2>Select a track:</h2>
+			<div class="center">
+				<h2>Select a Track</h2>
+			</div>
+			<br><br>
+			<div class="row">
+				<div class="col-md-5 track-pick">
 					<button class="btn btn-lg btn-info" onclick="track1()">Merry Strictmas</button><br>
 					<button class="btn btn-lg btn-info" onclick="track2()">Enter The Reef</button><br>
 					<button class="btn btn-lg btn-info" onclick="track3()">Strict Steve</button><br>
 					<button class="btn btn-lg btn-info" onclick="track4()">In Your Eyes</button><br>
 					<button class="btn btn-lg btn-info" onclick="track5()">Save Myself</button><br>
 				</div>
-				<div class="col-lg-6 current">
-					<i class="fa fa-music"></i>
+				<div class="col-md-7"><div id="audio-place" style="font-size:300px;text-align:center;"><i class="fa fa-music"></i></div></div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">&nbsp;</div>
+				<div class="col-md-4 track-pick">
 				</div>
+				<div class="col-md-4">&nbsp;</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">&nbsp;</div>
+				<div class="col-md-4 track-pick">
+				</div>
+				<div class="col-md-4">&nbsp;</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">&nbsp;</div>
+				<div class="col-md-4 track-pick">
+				</div>
+				<div class="col-md-4">&nbsp;</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">&nbsp;</div>
+				<div class="col-md-4 track-pick">
+				</div>
+				<div class="col-md-4">&nbsp;</div>
 			</div>
 		</div>
 	</div>
@@ -106,7 +156,7 @@
 					</div>
 					<div class="col-lg-3">
 						<h2>Special Guests: </h2>
-						<h3>DJ @@, 2Chainz</h3>
+						<h3>Skrillex, 2Chainz</h3>
 					</div>
 					<div class="col-lg-3">
 						<h2>Price: </h2>
@@ -256,24 +306,24 @@
 
 		});
 function track1(){
-	$('.current').remove();
-	$('#listen').append('<div class="col-lg-6 current"><iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/126370907&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe></div>')
+	// $('.current').remove();
+	$('#audio-place').html('<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/126370907&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>')
 }
 function track2(){
-	$('.current').remove();
-	$('#listen').append('<div class="col-lg-6 current"><iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/124600491&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe></div>')
+	// $('.current').remove();
+	$('#audio-place').html('<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/124600491&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>')
 }
 function track3(){
-	$('.current').remove();
-	$('#listen').append('<div class="col-lg-6 current"><iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/122254903&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe></div>')
+	// $('.current').remove();
+	$('#audio-place').html('<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/122254903&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>')
 }
 function track4(){
-	$('.current').remove();
-	$('#listen').append('<div class="col-lg-6 current"><iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/109633032&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe></div>')
+	// $('.current').remove();
+	$('#audio-place').html('<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/109633032&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>')
 }
 function track5(){
-	$('.current').remove();
-	$('#listen').append('<div class="col-lg-6 current"><iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/58487048&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe></div>')
+	// $('.current').remove();
+	$('#audio-place').html('<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/58487048&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>')
 }
 </script>
 {% endblock %}
