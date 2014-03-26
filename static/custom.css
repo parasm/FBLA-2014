@@ -29,35 +29,48 @@ html, body {
 }
 .name{
 	width: 100%;
-	background-image: url(./van_mini.jpg);
-	-webkit-filter: blur(2px); -moz-filter: blur(2px); -o-filter: blur(2px); -ms-filter: blur(2px); filter: blur(2px);
+	background: url(./van_mini.jpg) no-repeat center center fixed;
 	background-size: cover;
+	/*-webkit-filter: blur(2px); -moz-filter: blur(2px); -o-filter: blur(2px); -ms-filter: blur(2px); filter: blur(2px);*/
 	position: relative;
 	font-size: .1em;
-	height: 100%;
-	-khtml-opacity:.80; 
+	min-height: 100%;
+	/*-khtml-opacity:.80; 
 	-moz-opacity:.80; 
 	-ms-filter:"alpha(opacity=80)";
 	filter:alpha(opacity=80);
 	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.80);
-	opacity:.80; 
+	opacity:.80; */
+}
+
+
+.topmost.reef {
+	/*position: absolute;*/
+	/*top: 40%;*/
+	width: 100%;
+	margin-top: 18%;
+}
+
+.jumbotron.reef {
+	/*padding: 5px !important;*/
 }
 
 h1.reef {
 	/*padding-bottom: 200px;*/
 	font-weight: bolder;
-	position: absolute;
-	top: 40%;
-	width: 100%;
 	text-align: center;
 	color: #2c3e50;
 	font-size: 100px;
 }
+p#arrow{
+	margin-top: 8%;
+	margin-bottom: 10%;
+}
 .fa-angle-down:before {
 	color:white;
 	font-weight: bolder;
-	position: absolute;
-	top: 80%;
+	/*position: absolute;
+	top: 80%;*/
 	width: 100%;
 	text-align: center;	
 	font-size: 80px;
@@ -68,8 +81,11 @@ h1.reef {
 	/*background-image: url(./dimension.png);*/
 	/*background-size: repeat;*/
 	/*position: relative;*/
-	height: 100%;
+	/*height: 100%;*/
 	/*background-repeat: initial;*/
+}
+#about-place {
+	padding-bottom: 70px;
 }
 #tour{
 	background-image: url(./water.jpg);
@@ -78,17 +94,17 @@ h1.reef {
 	background-repeat: initial;
 }
 .listen{
-	background-image: url(./rocks.jpg);
+	background: url(./rocks.jpg) no-repeat center center fixed;
 	background-size: cover;
 	position: relative;
-	height: 100%;
+	/*height: 100%;*/
 	background-repeat: initial;
 }
 #cart{
 	background-image: url(./beach_mini.JPG);
 	background-size: cover;
 	position: relative;
-	height: 100%;
+	/*height: 100%;*/
 	background-repeat: initial;
 }
 label{
@@ -110,8 +126,8 @@ label{
 }
 .section{
 	/*height: 100%;*/
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 .descrp{
 	font-size: 20px;
@@ -120,8 +136,11 @@ label{
 	height: 60%;
 	width: 190%;
 }
-.track-pick{
-	width: 40%;
+/*.track-pick{
+	width: 100%;
+}*/
+#audio-place {
+	width: 100%;
 }
 .current i{
 	padding-left: 30%;
