@@ -203,12 +203,15 @@
 			</div>
 		</div>
 	</div>
+	<div class="f">
+	  <p class="footer">Made by: <a href="http://parasmodi.com">Paras Modi</a>, <a href="http://imjaredz.com">Jared Zoneraich</a>, and <a href = "https://github.com/DiZy">David Zilburg</a>. All copyright and fair use laws have been followed in the creation of this website.</p>
+	</div>
 </div>
 <script type="text/javascript">
-	$('document').ready(function(){
-		var $window = $(window); var velocity = 0.1; function update(){ var pos = $window.scrollTop(); $('.back').each(function() { var $element = $(this); var height = $element.height(); $(this).css('backgroundPosition', '50% ' + Math.round((height - pos) * velocity) + 'px'); }); }; $window.bind('scroll', update);
+	// $('document').ready(function(){
+	// 	var $window = $(window); var velocity = 0.1; function update(){ var pos = $window.scrollTop(); $('.back').each(function() { var $element = $(this); var height = $element.height(); $(this).css('backgroundPosition', '50% ' + Math.round((height - pos) * velocity) + 'px'); }); }; $window.bind('scroll', update);
 
-	});
+	// });
 	$('#form').submit(function (event) {
 		event.preventDefault();
 		var tour1 = $('#tour1').val();

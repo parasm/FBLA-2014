@@ -1,25 +1,24 @@
 @font-face {
 	font-family: "ProximaNova";
-	src: url('/static/ProximaNova-Light.otf') format("opentype");
+	src: url('./ProximaNova-Light.otf') format("opentype");
 }
 
 @font-face {
 	font-family: "ProximaNova";
-	src: url('/static/ProximaNova-Bold.otf') format("opentype");
+	src: url('./ProximaNova-Bold.otf') format("opentype");
 	font-weight: bold;
 }
 
 
 @font-face {
 	font-family: "ProximaNova";
-	src: url('/static/ProximaNova-Extrabold.otf') format("opentype");
+	src: url('./ProximaNova-Extrabold.otf') format("opentype");
 	font-weight: bolder;
 }
 
 html, body {
 	font-family: ProximaNova, Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
 }
-
 .navbar {
 	opacity: .75;
 }
@@ -177,7 +176,19 @@ label{
 .blog-panel h1 {
 	color: #ecf0f1;
 }
-
+.f {
+	text-align: center;	
+	margin: 0 auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    overflow:hidden;
+    font-size: 13px;
+    background-color: #ecf0f1;
+    opacity: 0.8;
+}
 .well.blog {
 	opacity: .9;
 }
