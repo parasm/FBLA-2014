@@ -42,6 +42,11 @@ html, body {
 	opacity:.80; */
 }
 
+.social-btn {
+	position: fixed;
+	right: 10px;
+	top: 70px;
+}
 
 .topmost.reef {
 	/*position: absolute;*/
