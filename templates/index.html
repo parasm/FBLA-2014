@@ -12,7 +12,7 @@
 	</div>
 	<p style="text-align:center;" id="arrow"><a href="#about-place"><i class="fa fa-angle-down" style="color:white;"></i></a></p>
 	<br><br><br>
-	<div class="container" id="about-place">
+	<div class="container" id="about-place" style="padding-top:100px;">
 		<div class="jumbotron">
 			<h1 class="header center">About Us</h1>
 			<br/>
@@ -94,26 +94,26 @@
 		</div>
 	</div>
 </div>
-<div class="section back" id="tour">
+<div class="section" id="tour">
 	<div class="container">
 		<div class="jumbotron">
 			<h1 class="header">Tour Schedule</h1>
 			<form id="form">
 				<div class="row">
 					<div class="col-lg-3">
-						<h2>Concert Date: </h2>
+						<h2 style="font-weight: bold;">Concert Date: </h2>
 						<h3>March 21<sup>st</sup>, 2014</h3>
 					</div>
 					<div class="col-lg-3">
-						<h2>Venue: </h2>
+						<h2 style="font-weight: bold;">Venue: </h2>
 						<h3>Madison Square Garden</h3>
 					</div>
 					<div class="col-lg-3">
-						<h2>Special Guests: </h2>
+						<h2 style="font-weight: bold;">Special Guests: </h2>
 						<h3>Drake, Swedish House Mafia</h3>
 					</div>
 					<div class="col-lg-3">
-						<h2>Price: </h2>
+						<h2 style="font-weight: bold;">Price: </h2>
 						<h3>$75.00</h3>
 					</div>
 					<div class="col-lg-4 add">
@@ -124,19 +124,19 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-3">
-						<h2>Concert Date: </h2>
+						<h2 style="font-weight: bold;">Concert Date: </h2>
 						<h3>May 18<sup>th</sup>, 2014</h3>
 					</div>
 					<div class="col-lg-3">
-						<h2>Venue: </h2>
+						<h2 style="font-weight: bold;">Venue: </h2>
 						<h3>IZOD center</h3>
 					</div>
 					<div class="col-lg-3">
-						<h2>Special Guests: </h2>
+						<h2 style="font-weight: bold;">Special Guests: </h2>
 						<h3>A$AP Rocky, Valx DJ</h3>
 					</div>
 					<div class="col-lg-3">
-						<h2>Price: </h2>
+						<h2 style="font-weight: bold;">Price: </h2>
 						<h3>$50.00</h3>
 					</div>
 					<div class="col-lg-4 add">
@@ -147,19 +147,19 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-3">
-						<h2>Concert Date: </h2>
+						<h2 style="font-weight: bold;">Concert Date: </h2>
 						<h3>July 3<sup>th</sup>, 2014</h3>
 					</div>
 					<div class="col-lg-3">
-						<h2>Venue: </h2>
+						<h2 style="font-weight: bold;">Venue: </h2>
 						<h3>Bergen County Acadmies</h3>
 					</div>
 					<div class="col-lg-3">
-						<h2>Special Guests: </h2>
+						<h2 style="font-weight: bold;">Special Guests: </h2>
 						<h3>Skrillex, 2Chainz</h3>
 					</div>
 					<div class="col-lg-3">
-						<h2>Price: </h2>
+						<h2 style="font-weight: bold;">Price: </h2>
 						<h3>$60.00</h3>
 					</div>
 				</div>	
@@ -175,7 +175,7 @@
 		</div>
 	</div>
 </div>
-<div class="section back" id="cart">
+<div class="section" id="cart">
 	<div class="container">
 		<div class="jumbotron">
 			<div class="row">
@@ -208,10 +208,9 @@
 	</div>
 </div>
 <script type="text/javascript">
-	// $('document').ready(function(){
-	// 	var $window = $(window); var velocity = 0.1; function update(){ var pos = $window.scrollTop(); $('.back').each(function() { var $element = $(this); var height = $element.height(); $(this).css('backgroundPosition', '50% ' + Math.round((height - pos) * velocity) + 'px'); }); }; $window.bind('scroll', update);
-
-	// });
+	$('document').ready(function(){
+		var $window = $(window); var velocity = 0.2; function update(){ var pos = $window.scrollTop(); $('.back').each(function() { var $element = $(this); var height = $element.height(); $(this).css('backgroundPosition', '50% ' + Math.round((height - pos) * velocity) + 'px'); }); }; $window.bind('scroll', update);
+	});
 	$('#form').submit(function (event) {
 		event.preventDefault();
 		var tour1 = $('#tour1').val();

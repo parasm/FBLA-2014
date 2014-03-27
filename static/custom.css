@@ -87,24 +87,24 @@ p#arrow{
 	padding-bottom: 70px;
 }
 #tour{
-	background-image: url(./water.jpg);
+	background: url(./beach_mini.JPG) no-repeat center center fixed;
 	background-size: cover;
 	position: relative;
-	background-repeat: initial;
+	/*background-repeat: initial;*/
 }
 .listen{
 	background: url(./rocks.jpg) no-repeat center center fixed;
 	background-size: cover;
 	position: relative;
 	/*height: 100%;*/
-	background-repeat: initial;
+	/*background-repeat: initial;*/
 }
 #cart{
-	background-image: url(./beach_mini.JPG);
+	background: url(./beach_mini.JPG) no-repeat center center fixed;
 	background-size: cover;
 	position: relative;
 	/*height: 100%;*/
-	background-repeat: initial;
+	/*background-repeat: initial;*/
 }
 label{
 	color:black;
@@ -211,7 +211,7 @@ h2 small {
 
 .jumbotron {
 	color: #2c3e50 !important;
-	opacity: .8;
+	opacity: .9;
 }
 
 h1.header {
@@ -221,4 +221,11 @@ h1.header {
 
 .fa-times {
 	cursor: pointer;
+}
+
+.thanks {
+	background: url(./dizy.jpg) no-repeat center center fixed;
+	background-size: cover;
+	position: relative;
+	height: 100%;
 }
